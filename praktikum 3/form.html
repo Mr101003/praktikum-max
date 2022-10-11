@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pemesanan pizza</title>
+</head>
+<body>
+        <h1>Black Goose Bistro | pizza-on-demand</h1>
+        <p>Our 12"wood-fired pizzas are available for deilivery. Build your custom pizza and we'll deliverit whitin an hour</p>
+    <hr>
+    <form action="succes-order.html">
+        <!-- isi form table and fieldset -->
+        <!-- table -->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"><h2>Your Information</h2></th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td>: <input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td>: <input type="text" id="address"></td>
+                </tr>
+                <tr>
+                    <td><label for="hp">No Handphone</label></td>
+                    <td>: <input type="number" id="hp"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail</label></td>
+                    <td>: <input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="description">Delivery Instructions</label></td>
+                    <td>: <textarea type="text" id="description"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- fieldset -->
+        <fieldset>
+            <legend><b>Design Your Dream Pizza</b></legend>
+                    <h4>Crust (Choose one):</h4>
+                    <Ul style="list-style-type: none;">
+                        <li>
+                            <input type="radio" id="white" name="crust">
+                            <label for="white">Classic White</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="multigrain" name="crust">
+                            <label for="multigrain">Multigrain</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="una" name="crust">
+                            <label for="una">Una Melt</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="cheese" name="crust">
+                            <label for="cheese">Cheesy Galore</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="meat" name="crust">
+                            <label for="meat">Meat lovers</label>
+                        </li>
+                    </Ul>
+                    <h4>Toppings (Choose as many as you want):</h4>
+                    <Ul style="list-style-type: none;">
+                        <li>
+                            <input type="checkbox" id="white-Sauce">
+                            <label for="white-Sauce">white-Sauce</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="mozarela">
+                            <label for="mozarela">Mozarela Cheese</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="basket">
+                            <label for="basket">Pepprerani</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="jamur">
+                            <label for="jamur">Mushrooms</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="paprika">
+                            <label for="paprika">Peppers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="ancor">
+                            <label for="ancor">Anchories</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="nanas">
+                            <label for="nanas">Pineaple</label>
+                        </li>
+                    </Ul>
+                    <h4>Amount</h4>
+                    <label for="count">How many Pizzas : </label>
+                    <input type="number" id="count">
+                        <br>
+                        <br>
+                    <button type="submit">Bring Me a Pizza</button>
+                    <button type="reset">Reset</button>    
+        </fieldset>
+    </form>
+</body>
+</html>
